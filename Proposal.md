@@ -1,8 +1,8 @@
 # CAChemE Proposal
 
 - *Submission Type:* 45 minutes
-- *Title:* Mathematical Optimization with Pyomo
-- *Subtitle (100 chars max):* Usage of Pyomo to solve different Optimization Problems (LP, NLP, QP, MILP, MINLP and MISP)
+- *Title:* How to improve your diet and save money with Python
+- *Subtitle (100 chars max):* Mathematical optimization with Pyomo or how to solve LP, NLP and MILP problems with Python
 - *Sub Community:* All 
 - *Language:* English
 - *Audience Level:* Beginner
@@ -10,25 +10,21 @@
 
 
 ## SHORT VERSION 
-Optimization or Mathematical Programming with different algebraic modeling languages -- better known as [GAMS](http://www.gams.com/), [AMPL](http://ampl.com/) and [AIMMS](http://www.aimms.com/) --- is used in the Industry to solve different problems, covering problems as the selection of the perfect equipment or the logistical management of a Company. [Pyomo](http://www.pyomo.org/) is an Open Source package -- with an BSD licence from [Sandia National Laboratories](http://www.sandia.gov/), USA--- developed in Python, which supports a different set of optimization capabilities in order to get a complet analysis and formulation of the Optimization problems. In particular, Pyomo can be applied in problems like [LP](https://en.wikipedia.org/wiki/Linear_programming), [QP](https://en.wikipedia.org/wiki/Quadratic_programming), [NP](https://en.wikipedia.org/wiki/Nonlinear_programming), MILP, MINLP, MISP and a lot of others. Another plus is that it can be linked with the principal commercial solvers, open code and/or free solvers, like the  [NEOS](http://www.neos-server.org/neos/) server platform. 
-At this talk, Chemical Engineering students of the University of Alicante will show a visual introduction of the optimization world, presenting Pyomo and the resolution of practical cases.
+Optimization in Python (also known as mathematical programming) can be performed by minimization (or maximization) of an objective function within a model that can include discrete variables subject to a set of restrictions. Optimization models are often described by specific algebraic modeling languages —mainly  [GAMS](http://www.gams.com/), [AMPL](http://ampl.com/) or [AIMMS](http://www.aimms.com/)— which are used in industry to solve different problems such as, equipment selection, scheduling, or supply chain of a company. [Pyomo](http://www.pyomo.org/) is an Open Source package —with an BSD licence from [Sandia National Laboratories](http://www.sandia.gov/), USA— developed in Python, which supports a different set of optimization capabilities in order to get a complet analysis and formulation of optimization problems. In particular, Pyomo can be applied in problems like [LP](https://en.wikipedia.org/wiki/Linear_programming), [QP](https://en.wikipedia.org/wiki/Quadratic_programming), [NP](https://en.wikipedia.org/wiki/Nonlinear_programming), MILP, MINLP, MISP among others. More importantly, pyomo models can communicate with principal commercial and open-source solvers; including [NEOS](http://www.neos-server.org/neos/) server platform. 
+At this talk, Chemical Engineering students of the University of Alicante will introduce the audience to the possibilites of optimization, presenting Pyomo and showing real world examples such as how to improve your diet and save money at fast food restaurants.
 
 ## LONGER VERSION
 
-The process optimization at the Industry sector has been growing in the last years. The modern industry use it in a lot of different fields, you can find it at the optimization of the production, to reduce the costs, to reduce the environmental impact or to increase the security sector. So it`s reasonable to introduce and educate new engineers at this science sector.  
+Process optimization in industry has become essential in order to maxime the resources avaliable and reduce energy consumption. Modern industry is now trying to reduce its environmental impact by means of optimization tools. 
+When one thinks about optimization in Computational Science, it is usually meant only to execution time reduction; but Mathematical Optimization (also known as the mathematical programming) has nothing to do with it. Nowadays, the education that many engineers and science students receive, limits solely to the SIMPLEX algorithm for Linear Problems with continuous variables. However, optimization problems become intersting when dealing with restrictions (linear or nonlinear) and integer variables (modeling the discrete decisions). Two of the most used commercial modeling languages to solve this problem sets are GAMS and AMPL. Python ecosystem presents different libraries to solve optimization problems, some of them are [CVXOpt](http://cvxopt.org/), [CVXPy](http://www.cvxpy.org/en/latest/), [PulP](https://pythonhosted.org/PuLP/), [OpenOpt](http://openopt.org/Welcome), or Pyomo. 
+Among them, Pyomo results interesting because:
+- It can be used for Mathematical modeling in Python simlarly to AMPL (and GAMS)
+- It communicates with the main solvers used in this field such as GLPK, Gurobi, CPLEX, CBC and PICO
+- It's free and open source Python library (BSD license), being developed by Sandia National Laboratories, USA.
+- It supports Python 3 and it is easy install.
+- It can use NEOS server (web platform which gives free access to commercial solvers)
 
-When you think about Optimization at the world of the Computational Science, normally, people refer to it to reduce the execution time of the code; but Mathematical Optimization (also known as the mathematical programming) has nothing to do with it, and in a lot of cases the education we receive remains at the SIMPLEX algorithm for Linear Problems with continuous variables.  
-
-An Optimization problem consists, roughly speaking, in the maximization or minimization of a real function choosing the init values systematically (taking a permitted set) and calculating the function value. This problem gets interesting when we have to deal with restrictions (linear or nonlinear) and integer variables (modeling the discrete decisions). Two of the most used commercial modeling languages to solve this problem sets are GAMS and AMPL. Python has a lot of different libraries to solve the same type of problems, some of them are [CVXOpt](http://cvxopt.org/), [CVXPy](http://www.cvxpy.org/en/latest/), [PulP](https://pythonhosted.org/PuLP/), [OpenOpt](http://openopt.org/Welcome), or Pyomo. The last one, Pyomo.org, results interesting because:
-- It can be used for Mathematical modelling in Python like AMPL/GAMS
-- It can be linked directly with the principal solvers, as well as GLPK, Gurobi, CPLEX, CBC y PICO
-- It's open source (BSD license) and the developer is Sandia National Laboratories, USA.
-- Pyomo (older days known as Coopr) is 100% free, mature and well documented.
-- It has a Python 3  support and a easy installation.
-- It can use NEOS server (web platform which gives access to the commercial solvers -- for free)
-- It's developed in Python, so it can be adapted to different types a problem models.
-
-Pyomo shows, that it can compete with other commercial algebraic modelling languages as AMPL, AIMMS and GAMS, but it has the benefit that it's in Python, an high level programming skill with a wide spectrum of scientific libraries. Taking reference to the capabilities like a algebraic modeling language, Pyomo is able to embrace a lot of different problem types, including some like: 
+In this way, Pyomo can compete with other commercial algebraic modelling languages such as AMPL, AIMMS and GAMS. Concretely, Pyomo can be used to model a variaty of mathematical models including: 
 
 - Linear Programming
 - Quadratic Programming
@@ -40,20 +36,20 @@ Pyomo shows, that it can compete with other commercial algebraic modelling langu
 - General Disjunctive Programming
 - Differential algebraic equations 
 
-The talk is divided in three parts:
+The talk will be divided in three parts:
 
-1. Introduction to Mathematical Programming/Optimization (15 min): it is a visual introduction of the Optimization concepts with restrictions (linear Programming, Nonlinear Programming, ILP, MIP, MINLP). 
+1. Introduction to Mathematical Programming/Optimization (15 min): visual introduction of optimization concepts including restrictions and non linearties (linear Programming, Nonlinear Programming, ILP, MIP, MINLP). 
 
-2. Introduction to the Pyomo syntaxes and a quick note for the installation (15min): 	it will be focused on simple optimization examples solved with Pyomo. 	
+2. Introduction to the Pyomo sintax and a quick note for the installation (20 min): showing how to improve their diet and save money when ordering food in fast food restaurants.
 	
-3. Optimization problems  in Engineering  (15 min): 	taking special attention of solved examples of the real life.
+3. Optimization problems in Engineering (10 min): showing more adavanced optimization examples that include decision variables.
 
 ### About us:
 
-[CAChemE](http://cacheme.org/) it's an nonprofit association formed by Chemical Engineers (professionals, teachers and students) which tries to encourage the software possibilities at the Chemical Process Engineering. Our goal is to promote the advantages of the new Open Source software tools and promote their use at the University and Industry. The headquarter of CAChemE is in the [University Institute of Chemical Engineering Processes](http://iipq.ua.es/) at the [University of Alicante](http://www.ua.es/).
+[CAChemE](http://cacheme.org/) it's an nonprofit association formed by Chemical Engineers (professionals, students, and professors) which tries to encourage the new software possibilities in Chemical Process Engineering. Our goal is to promote the advantages of the Open Source alternatives such as Python and support their implementation at the university and industry. CAChemE is located in the [University Institute of Chemical Engineering Processes](http://iipq.ua.es/) at the [University of Alicante](http://www.ua.es/).
 
 ### Additional information for talk reviewers:
 
-The talk will be oriented to beginners and will be given by three Chemical Engineering students. Therefore,  it will be given for granted that the audience know the basic concepts about programming with Python. The code of the solved problems and the slideshow will be available on our GitHub repo.
+The talk will be oriented to beginners and will be given by Chemical Engineering students. Slides, Jupyter Notebooks will be available in GitHub.
 
 ** Tags: ** Science Track, Educational Track, Scientific Libraries (maybe), Beginners, Engineering, Open-Source, Python 3, Jupyter/iPython Notebook, Python General, Science
