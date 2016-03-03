@@ -1,0 +1,126 @@
+# http://nutrition.mcdonalds.com/getnutrition/nutritionfacts.pdf
+# http://www.fastfoodmenuprices.com/mcdonalds-prices/
+
+#Food + Cost
+
+param:  F:                                                  c  :=
+  "Bacon Clubhouse Burgerx"                                 4.49
+  "Bacon Clubhouse Grilled Chicken Sandwichx"               4.00
+  "Bacon Clubhouse Crispy Chicken Sandwichx"                4.00
+  "McChickenx"                                              4.00
+  "Buffalo Ranch McChickenx"                                1.00
+  "Bacon Buffalo Ranch McChickenx"                          1.00
+  "Southern Style Buttermilk Crispy Chicken Sandwichx"      2.00
+  "Filet-O-Fishx"                                           4.79
+  "McRibx"                                                  3.79
+  "Premium McWrap Chicken & Bacon (Crispy)x"                2.99
+  "Premium McWrap Chicken & Bacon (Grilled)x"               3.99
+  "Premium McWrap Chicken & Ranch (Crispy)x"                3.99               
+  "Premium McWrap Chicken & Ranch (Grilled)x"               3.99
+  "Premium McWrap Chicken & Sweet Chili (Crispy)x"          3.99
+  "Premium McWrap Chicken & Sweet Chili (Grilled)x"         3.99
+  "Big Macx"                                                3.69   
+  "Quarter Pounder with Cheesex"                            3.69
+  "Double Quarter Pounder with Cheesex"                     1.29  
+  "Hamburguerx"                                             1.29
+  "Cheeseburgerx"                                           1.00
+  "BBQ Ranch Burgerx"                                       1.29
+  "Grilled Onion Cheddarx"                                  1.00
+  "Double Cheeseburgerx"                                    2.00 
+  "McDoublex"                                               2.00
+  "Bacon McDoublex"                                         1.99
+  "Daily Doublex"                                           1.59
+  "Ranch Snack Wrap (Crispy)x"                              1.59
+  "Ranch Snack Wrap (Grilled)x"                             1.59
+  "Mac Snack Wrapx"                                         2.00
+  "Jalapenio Doublex"                                       3.89
+  "Premium Crispy Chicken Deluxe Sandwichx"                 3.99
+  "Quarter Pounder Deluxex"                                 4.39
+  "Artisan Grilled Chicken Sandwichx"                       4.39
+  "Buttermilk Crispy Chicken Sandwichx"                     4.19
+  "Premium Asian Sald with Crispy Chickenx"                 4.59
+  "Premium Asian Sald with Grilled Chickenx"                4.29
+  "Bacon Cheddar McChickenx"                                4.59
+  "Chicken McNuggetsx"                                      1.69
+  "Ranch Snack Wrapx"                                       1.39
+  "Small French Friesx"                                     1.39
+  "Premium Bacon Ranch Salad with Crispy Chickenx"          4.59
+  "Baked Mozzarella Sticksx"                                1.19   ;
+ 
+
+# Max and Min for each Nutrient
+param:  N:       Nmin   Nmax    :=
+        Cal      200      2250
+        Fat      0        300
+        T        0        65
+        Chol     55       300
+        Na       0        1700
+        Car      0        75
+        F        0        100
+        S        0        50
+        P        30       .
+        VA       0        .
+        VC       10       .
+        Ca       10       .
+        I        10       .    ;
+
+# Cal = Calories
+#Fat = Calories from Fat
+#T = Total Fat (g)
+#Chol = Cholesterol (mg)
+#Na = Sodium (mg)
+#C = Carbohydrates (g)
+#F = Fiber (g)
+#S = Sugar (g)
+#P = Proteine (g)
+#A = Vitamine A
+#C = Vitamine C
+#Ca = Calcium
+#I = Iron
+
+# Amount of nutrient
+
+param a:
+                               								             Cal   Fat   T    Chol   Na    Car   F   S    P   VA   VC   Ca  I  :=
+  "Bacon Clubhouse Burgerx" 								               740   370   41   125   1480  51   4   14   40   8    25   30  25
+  "Bacon Clubhouse Grilled Chicken Sandwichx"              610   230   26   125   1750  50   3   14   45   8    30   35  15
+  "Bacon Clubhouse Crispy Chicken Sandwichx"               750   340   38   90    1720  65   4   16   36   8    25   30  15             
+  "McChickenx"                                             370   150   17   40    650   40   2   5    14   2    0    10  15
+  "Buffalo Ranch McChickenx"                               370   150   17   40    850   41   2   5    14   2    0    15  15             
+  "Bacon Buffalo Ranch McChickenx"                         440   190   21   55    1120  41   2   6    20   2    10   15  15             
+  "Southern Style Buttermilk Crispy Chicken Sandwichx"     490   220   25   70    1120  43   2   6    22   4    10   20  15  
+  "Filet-O-Fishx"                                          470   190   21   60    810   46   2   5    25   4    8    15  20             
+  "McRibx"                                                 390   170   19   40    590   39   2   5    15   2    0    15  10       
+  "Premium McWrap Chicken & Bacon (Crispy)x"               500   240   26   70    980   44   3   11   22   2    2    15  20
+  "Premium McWrap Chicken & Bacon (Grilled)x"              640   290   32   80    1550  56   4   7    33   100  30   20  25
+  "Premium McWrap Chicken & Ranch (Crispy)x"               500   180   19   115   1570  41   3   5    41   100  30   25  20             
+  "Premium McWrap Chicken & Ranch (Grilled)x"              610   280   31   65    1350  56   4   7    27   100  20   20  20     
+  "Premium McWrap Chicken & Sweet Chili (Crispy)x"         470   170   19   100   1370  41   3   5    35   100  25   25  20
+  "Premium McWrap Chicken & Sweet Chili (Grilled)x"        540   200   23   50    1260  61   4   13   24   100  20   10  20 
+  "Big Macx"                                               400   90    10   80    1250  46   3   11   31   100  25   15  20            
+  "Quarter Pounder with Cheesex"                           540   250   28   80    970   47   3   9    25   6    2    25  25      
+  "Double Quarter Pounder with Cheesex"                    540   250   28   100   1110  42   3   10   31   10   4    30  25  
+  "Hamburguerx"                                            780   410   45   175   1310  43   3   10   50   10   4    30  40
+  "Cheeseburgerx"                                          250   70    8    30    490   32   1   6    12   2    2    10  15
+  "BBQ Ranch Burgerx"                                      300   110   12   40    680   33   2   7    15   6    2    20  15
+  "Grilled Onion Cheddarx"                                 350   140   15   45    670   37   3   7    15   4    0    20  15
+  "Double Cheeseburgerx"                                   310   120   13   45    640   32   2   6    15   2    2    20  15  
+  "McDoublex"                                              440   200   22   85    1050  35   2   7    25   10   2    30  20
+  "Bacon McDoublex"                                        390   160   18   70    850   34   2   7    22   6    2    20  20
+  "Daily Doublex"                                          460   210   23   85    1120  34   2   7    28   6    10   20  20
+  "Ranch Snack Wrap (Crispy)x"                             440   210   24   75    770   34   2   7    22   8    6    20  20
+  "Ranch Snack Wrap (Grilled)x"                            360   180   20   40    810   32   1   3    15   2    0    10  10 
+  "Mac Snack Wrapx"                                        290   120   13   55    820   25   1   2    19   2    2    15  10
+  "Jalapenio Doublex"                                      330   170   19   45    670   26   1   3    14   2    0    8   15
+  "Premium Crispy Chicken Deluxe Sandwichx"                440   210   24   75    990   35   2   6    23   6    8    20  20
+  "Quarter Pounder Deluxex"                                530   200   22   45    1000  59   3   13   25   6    10   20  15
+  "Artisan Grilled Chicken Sandwichx"                      600   300   33   105   1200  44   3   11   31   15   10   30  25
+  "Buttermilk Crispy Chicken Sandwichx"                    360   50    6    75    960   43   3   10   33   4    15   25  15
+  "Premium Asian Sald with Crispy Chickenx"                610   230   26   125   1750  50   3   14   45   8    30   35  15
+  "Premium Asian Sald with Grilled Chickenx"               410   200   22   45    740   32   5   12   23   180  70   15  15
+  "Bacon Cheddar McChickenx"                               440   190   21   55    1120  41   2   6    20   2    10   15  15
+  "Chicken McNuggetsx"                                     470   190   21   60    810   46   2   5    25   4    8    15  20
+  "Ranch Snack Wrapx"                                      360   180   20   40    810   32   1   3    15   2    0    10  10
+  "Small French Friesx"                                    230   100   11   0     130   30   2   0    2    0    30   0   4
+  "Premium Bacon Ranch Salad with Crispy Chickenx"         470   210   24   60    890   40   7   11   24   180  35   20  15
+  "Baked Mozzarella Sticksx"                               200   90    10   20    560   8    1   1    9    4    0    25  4   ;
