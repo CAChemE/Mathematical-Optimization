@@ -1,8 +1,8 @@
 # CAChemE Proposal
 
 - *Submission Type:* 45 minutes
-- *Title:* Mathematical Optimization with Pyomo
-- *Subtitle (100 chars max):* Usage of Pyomo (Python) to solve different optimization problems
+- *Title:* How to improve your diet and save money with Python
+- *Subtitle (100 chars max):* Mathematical optimization with Pyomo or how to solve LP, NLP and MILP problems with Python
 - *Sub Community:* All 
 - *Language:* English
 - *Audience Level:* Beginner
@@ -10,21 +10,21 @@
 
 
 ## SHORT VERSION 
-Optimization in Python (also known as mathematical programming) can be performed by minimization (or maximization) of an objective function within a model that can include discrete variables subject to a set of restrictions. Optimization models are often described by specific algebraic modeling languages —mainly  [GAMS](http://www.gams.com/), [AMPL](http://ampl.com/) or [AIMMS](http://www.aimms.com/)— which are used in industry to solve different problems such as, equipment selection, scheduling, or supply chain of a company. [Pyomo](http://www.pyomo.org/) is an Open Source package —with an BSD licence from [Sandia National Laboratories](http://www.sandia.gov/), USA— developed in Python, which supports a different set of optimization capabilities in order to get a complet analysis and formulation of the Optimization problems. In particular, Pyomo can be applied in problems like [LP](https://en.wikipedia.org/wiki/Linear_programming), [QP](https://en.wikipedia.org/wiki/Quadratic_programming), [NP](https://en.wikipedia.org/wiki/Nonlinear_programming), MILP, MINLP, MISP among others. More importantly, pyomo models can communicate with principal commercial and open-source solvers; including [NEOS](http://www.neos-server.org/neos/) server platform. 
-At this talk, Chemical Engineering students of the University of Alicante will introduce the audience to possibilites of optimization, presenting Pyomo and with real world examples.
+Optimization in Python (also known as mathematical programming) can be performed by minimization (or maximization) of an objective function within a model that can include discrete variables subject to a set of restrictions. Optimization models are often described by specific algebraic modeling languages —mainly  [GAMS](http://www.gams.com/), [AMPL](http://ampl.com/) or [AIMMS](http://www.aimms.com/)— which are used in industry to solve different problems such as, equipment selection, scheduling, or supply chain of a company. [Pyomo](http://www.pyomo.org/) is an Open Source package —with an BSD licence from [Sandia National Laboratories](http://www.sandia.gov/), USA— developed in Python, which supports a different set of optimization capabilities in order to get a complet analysis and formulation of optimization problems. In particular, Pyomo can be applied in problems like [LP](https://en.wikipedia.org/wiki/Linear_programming), [QP](https://en.wikipedia.org/wiki/Quadratic_programming), [NP](https://en.wikipedia.org/wiki/Nonlinear_programming), MILP, MINLP, MISP among others. More importantly, pyomo models can communicate with principal commercial and open-source solvers; including [NEOS](http://www.neos-server.org/neos/) server platform. 
+At this talk, Chemical Engineering students of the University of Alicante will introduce the audience to the possibilites of optimization, presenting Pyomo and showing real world examples such as how to improve your diet and save money at fast food restaurants.
 
 ## LONGER VERSION
 
 Process optimization in industry has become essential in order to maxime the resources avaliable and reduce energy consumption. Modern industry is now trying to reduce its environmental impact by means of optimization tools. 
-
-When one thinks about optimization in Computational Science, it is usually meant onlt to execution time reduction; but Mathematical Optimization (also known as the mathematical programming) has nothing to do with it. Nowadays, the education we receive at Engineering and Science schools limits solely to the SIMPLEX algorithm for Linear Problems with continuous variables. However, optimization problems gain interest when deaing with restrictions (linear or nonlinear) and integer variables (modeling the discrete decisions). Two of the most used commercial modeling languages to solve this problem sets are GAMS and AMPL. Python has a lot of different libraries to solve the same type of problems, some of them are [CVXOpt](http://cvxopt.org/), [CVXPy](http://www.cvxpy.org/en/latest/), [PulP](https://pythonhosted.org/PuLP/), [OpenOpt](http://openopt.org/Welcome), or Pyomo. The last one, Pyomo, results interesting because:
+When one thinks about optimization in Computational Science, it is usually meant only to execution time reduction; but Mathematical Optimization (also known as the mathematical programming) has nothing to do with it. Nowadays, the education that many engineers and science students receive, limits solely to the SIMPLEX algorithm for Linear Problems with continuous variables. However, optimization problems become intersting when dealing with restrictions (linear or nonlinear) and integer variables (modeling the discrete decisions). Two of the most used commercial modeling languages to solve this problem sets are GAMS and AMPL. Python ecosystem presents different libraries to solve optimization problems, some of them are [CVXOpt](http://cvxopt.org/), [CVXPy](http://www.cvxpy.org/en/latest/), [PulP](https://pythonhosted.org/PuLP/), [OpenOpt](http://openopt.org/Welcome), or Pyomo. 
+Among them, Pyomo results interesting because:
 - It can be used for Mathematical modeling in Python simlarly to AMPL (and GAMS)
 - It communicates with the main solvers used in this field such as GLPK, Gurobi, CPLEX, CBC and PICO
-- It's free and open source Python library (BSD license), being developed is Sandia National Laboratories, USA.
+- It's free and open source Python library (BSD license), being developed by Sandia National Laboratories, USA.
 - It supports Python 3 and it is easy install.
-- It can use NEOS server (web platform which gives free access to the commercial solvers)
+- It can use NEOS server (web platform which gives free access to commercial solvers)
 
-In this way, Pyomo can compete with other commercial algebraic modelling languages such as AMPL, AIMMS and GAMS, but the benefit that it's written entirly in Python. For example, Pyomo can be used to model a variaty of mathematical models including: 
+In this way, Pyomo can compete with other commercial algebraic modelling languages such as AMPL, AIMMS and GAMS. Concretely, Pyomo can be used to model a variaty of mathematical models including: 
 
 - Linear Programming
 - Quadratic Programming
