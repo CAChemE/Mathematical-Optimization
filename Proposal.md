@@ -52,4 +52,4 @@ The talk will be divided in three parts:
 
 The talk will be oriented to beginners and will be given by Chemical Engineering students. Slides, Jupyter Notebooks will be available in GitHub.
 
-** Tags: ** Science Track, Educational Track, Scientific Libraries (maybe), Beginners, Engineering, Open-Source, Python 3, Jupyter/iPython Notebook, Python General, Science
+*Tags:* Science Track, Educational Track, Scientific Libraries (maybe), Beginners, Engineering, Open-Source, Python 3, Jupyter/iPython Notebook, Python General, Science
