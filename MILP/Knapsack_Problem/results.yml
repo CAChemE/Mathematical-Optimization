@@ -1,0 +1,51 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Name: unknown
+  Lower bound: 141.0
+  Upper bound: 141.0
+  Number of objectives: 1
+  Number of constraints: 3
+  Number of variables: 11
+  Number of nonzeros: 21
+  Sense: maximize
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Termination condition: optimal
+  Statistics: 
+    Branch and bound: 
+      Number of bounded subproblems: 3
+      Number of created subproblems: 3
+  Error rc: 0
+  Time: 0.0077250003814697266
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: 0.0
+  Status: optimal
+  Message: None
+  Objective:
+    value:
+      Value: 141
+  Variable:
+    x[Saffron]:
+      Value: 1
+    x[Bracelet]:
+      Value: 1
+    x[Ring]:
+      Value: 1
+    x[Chest]:
+      Value: 1
+    x[Diamond]:
+      Value: 1
+  Constraint: No values
