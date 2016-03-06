@@ -1,0 +1,101 @@
+# http://nutrition.mcdonalds.com/getnutrition/nutritionfacts.pdf
+# http://www.fastfoodmenuprices.com/mcdonalds-prices/
+
+#Food + Cost
+
+param:  F:                                                 Cal  :=
+  "Bacon Clubhouse Burgerx"                                740
+  "Bacon Clubhouse Grilled Chicken Sandwichx"              610
+  "Bacon Clubhouse Crispy Chicken Sandwichx"               750             
+  "McChickenx"                                             370
+  "Buffalo Ranch McChickenx"                               370             
+  "Bacon Buffalo Ranch McChickenx"                         440             
+  "Southern Style Buttermilk Crispy Chicken Sandwichx"     490  
+  "Filet-O-Fishx"                                          470             
+  "McRibx"                                                 390       
+  "Premium McWrap Chicken & Bacon (Crispy)x"               500
+  "Premium McWrap Chicken & Bacon (Grilled)x"              640
+  "Premium McWrap Chicken & Ranch (Crispy)x"               500             
+  "Premium McWrap Chicken & Ranch (Grilled)x"              610     
+  "Premium McWrap Chicken & Sweet Chili (Crispy)x"         470
+  "Premium McWrap Chicken & Sweet Chili (Grilled)x"        540
+  "Big Macx"                                               400            
+  "Quarter Pounder with Cheesex"                           540      
+  "Double Quarter Pounder with Cheesex"                    540  
+  "Hamburguerx"                                            780
+  "Cheeseburgerx"                                          250
+  "BBQ Ranch Burgerx"                                      300
+  "Grilled Onion Cheddarx"                                 350
+  "Double Cheeseburgerx"                                   310  
+  "McDoublex"                                              440
+  "Bacon McDoublex"                                        390
+  "Daily Doublex"                                          460
+  "Ranch Snack Wrap (Crispy)x"                             440
+  "Ranch Snack Wrap (Grilled)x"                            360
+  "Mac Snack Wrapx"                                        290
+  "Jalapenio Doublex"                                      330
+  "Premium Crispy Chicken Deluxe Sandwichx"                440
+  "Quarter Pounder Deluxex"                                530
+  "Artisan Grilled Chicken Sandwichx"                      600
+  "Buttermilk Crispy Chicken Sandwichx"                    360
+  "Premium Asian Sald with Crispy Chickenx"                610
+  "Premium Asian Sald with Grilled Chickenx"               410
+  "Bacon Cheddar McChickenx"                               440
+  "Chicken McNuggetsx"                                     470
+  "Ranch Snack Wrapx"                                      360
+  "Small French Friesx"                                    230
+  "Premium Bacon Ranch Salad with Crispy Chickenx"         470
+  "Baked Mozzarella Sticksx"                               200  ; 
+
+# Max and Min Cost
+param:  N:       Cmin   Cmax    :=
+        Cost     5      10;
+
+
+
+# Amount of nutrient
+
+param a:
+                                                            Cost :=
+  "Bacon Clubhouse Burgerx"                                 4.49
+  "Bacon Clubhouse Grilled Chicken Sandwichx"               4.00
+  "Bacon Clubhouse Crispy Chicken Sandwichx"                4.00
+  "McChickenx"                                              4.00
+  "Buffalo Ranch McChickenx"                                1.00
+  "Bacon Buffalo Ranch McChickenx"                          1.00
+  "Southern Style Buttermilk Crispy Chicken Sandwichx"      2.00
+  "Filet-O-Fishx"                                           4.79
+  "McRibx"                                                  3.79
+  "Premium McWrap Chicken & Bacon (Crispy)x"                2.99
+  "Premium McWrap Chicken & Bacon (Grilled)x"               3.99
+  "Premium McWrap Chicken & Ranch (Crispy)x"                3.99               
+  "Premium McWrap Chicken & Ranch (Grilled)x"               3.99
+  "Premium McWrap Chicken & Sweet Chili (Crispy)x"          3.99
+  "Premium McWrap Chicken & Sweet Chili (Grilled)x"         3.99
+  "Big Macx"                                                3.69   
+  "Quarter Pounder with Cheesex"                            3.69
+  "Double Quarter Pounder with Cheesex"                     1.29  
+  "Hamburguerx"                                             1.29
+  "Cheeseburgerx"                                           1.00
+  "BBQ Ranch Burgerx"                                       1.29
+  "Grilled Onion Cheddarx"                                  1.00
+  "Double Cheeseburgerx"                                    2.00 
+  "McDoublex"                                               2.00
+  "Bacon McDoublex"                                         1.99
+  "Daily Doublex"                                           1.59
+  "Ranch Snack Wrap (Crispy)x"                              1.59
+  "Ranch Snack Wrap (Grilled)x"                             1.59
+  "Mac Snack Wrapx"                                         2.00
+  "Jalapenio Doublex"                                       3.89
+  "Premium Crispy Chicken Deluxe Sandwichx"                 3.99
+  "Quarter Pounder Deluxex"                                 4.39
+  "Artisan Grilled Chicken Sandwichx"                       4.39
+  "Buttermilk Crispy Chicken Sandwichx"                     4.19
+  "Premium Asian Sald with Crispy Chickenx"                 4.59
+  "Premium Asian Sald with Grilled Chickenx"                4.29
+  "Bacon Cheddar McChickenx"                                4.59
+  "Chicken McNuggetsx"                                      1.69
+  "Ranch Snack Wrapx"                                       1.39
+  "Small French Friesx"                                     1.39
+  "Premium Bacon Ranch Salad with Crispy Chickenx"          4.59
+  "Baked Mozzarella Sticksx"                                1.19   ;
