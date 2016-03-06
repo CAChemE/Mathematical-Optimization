@@ -1,0 +1,27 @@
+#SETS
+
+set ITEMS := Chest Ring Necklase Mirror Bracelet Ruby Perfume Diamond Cup Saffron ;
+
+#v = Volume
+#w = Weight
+#c = Cost
+#u = Quantity of each fo them
+
+#PARAMETERS
+param :			v     w     c   u   :=
+    Chest       1000  2000  50  1
+    Ring        2     20    5   10
+    Necklase    10    300   3   1
+    Mirror      500   1000  20  1      
+    Bracelet    15    300   16  15
+    Ruby        3     75    5   1
+    Perfume     100   100   1   1   
+    Diamond     5     50    30  1
+    Cup         250   500   12  1
+    Saffron     100   100   40  1    ;
+
+# Limit Value for the Volume in cm3
+param limitV := 2000;
+
+# Limit Value for the Weight in g
+param limitW := 2500;
