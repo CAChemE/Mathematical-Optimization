@@ -3,7 +3,7 @@
 - *Submission Type:* 45 minutes
 - *Title:* How to improve your diet and save money with Python
 - *Subtitle (100 chars max):* Mathematical optimization with Pyomo or how to solve LP, NLP and MILP problems with Python
-- *Sub Community:* All 
+- *Sub Community:* Scientific 
 - *Language:* English
 - *Audience Level:* Beginner
 - *Prerequisites for attending the session:* Python Basic Programming
