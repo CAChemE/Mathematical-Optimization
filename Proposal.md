@@ -15,7 +15,7 @@ At this talk, Chemical Engineering students of the University of Alicante will i
 
 ## LONGER VERSION
 
-Process optimization in industry has become essential in order to maxime the resources avaliable and reduce energy consumption. Modern industry is now trying to reduce its environmental impact by means of optimization tools. 
+Process optimization in industry has become essential in order to maximize the resources avaliable and reduce energy consumption. Modern industry is now trying to reduce its environmental impact by means of optimization tools. 
 When one thinks about optimization in Computational Science, it is usually meant only to execution time reduction; but Mathematical Optimization (also known as the mathematical programming) has nothing to do with it. Nowadays, the education that many engineers and science students receive, limits solely to the SIMPLEX algorithm for Linear Problems with continuous variables. However, optimization problems become intersting when dealing with restrictions (linear or nonlinear) and integer variables (modeling the discrete decisions). Two of the most used commercial modeling languages to solve this problem sets are GAMS and AMPL. Python ecosystem presents different libraries to solve optimization problems, some of them are [CVXOpt](http://cvxopt.org/), [CVXPy](http://www.cvxpy.org/en/latest/), [PulP](https://pythonhosted.org/PuLP/), [OpenOpt](http://openopt.org/Welcome), or Pyomo. 
 Among them, Pyomo results interesting because:
 - It can be used for Mathematical modeling in Python simlarly to AMPL (and GAMS)
